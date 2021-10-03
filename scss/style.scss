@@ -1,0 +1,32 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 50px;
+    width: 100%;
+    background-color: cyan;
+    opacity: 70%;
+
+    a {
+        text-decoration: none;
+        font-size: 40px;
+    }
+    
+    .logo {
+        margin: 0 180px;
+    }
+
+    .navbar {
+        a {
+            font-size: 30px;
+            margin: auto;
+        }
+    }
+}
