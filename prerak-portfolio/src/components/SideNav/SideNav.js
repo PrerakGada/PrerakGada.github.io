@@ -7,6 +7,7 @@ import {BiHomeSmile} from "react-icons/bi";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faEnvelope, faHome, faUser} from "@fortawesome/free-solid-svg-icons";
 import {faGithub, faInstagram, faLinkedin, faYoutube} from "@fortawesome/free-brands-svg-icons";
+import {GiSkills} from "react-icons/gi";
 
 const SideNav = () => {
 	return (
@@ -20,12 +21,19 @@ const SideNav = () => {
 					{/*<FontAwesomeIcon icon={faHome} color="#4d4d4e"/>*/}
 					<BiHomeSmile color={'blue'}/>
 				</NavLink>
+				
 				<NavLink activeclassname="active" className="about-link" to="/about">
 					<FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
 				</NavLink>
+				
 				<NavLink activeclassname="active" className="contact-link" to="/skills">
 					<FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
 				</NavLink>
+				
+				<NavLink activeclassname="active" className="contact-link" to="/contact">
+					<GiSkills/>
+				</NavLink>
+			
 			</nav>
 			<ul>
 				<li>
