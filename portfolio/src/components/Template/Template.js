@@ -5,6 +5,7 @@ import {TopNav} from "../TopNav/TopNav";
 import {About} from "../About/About";
 import './Template.scss'
 import {Skills} from "../Skills/Skills";
+import {Contact} from "../Contact/Contact";
 
 export const Template = () => {
 	return (
@@ -15,6 +16,7 @@ export const Template = () => {
 			<Home/>
 			<About/>
 			<Skills/>
+			<Contact/>
 			{/*</div>*/}
 		</div>
 	)

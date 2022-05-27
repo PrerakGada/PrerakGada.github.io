@@ -1,0 +1,15 @@
+@use '../../Theme' as t;
+
+.about-container {
+  padding-top: 10vh;
+  height: 100vh;
+  width: 100%;
+
+  .head {
+    color: t.$dark-gold-primary;
+    font-size: 40px;
+    hr {
+      width: 40%;
+    }
+  }
+}

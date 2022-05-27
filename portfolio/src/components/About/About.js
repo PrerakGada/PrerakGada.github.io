@@ -4,7 +4,8 @@ import './About.scss'
 export const About = () => {
   return (
     <div id='about' className={'about-container'}>
-      <h1>About Me</h1>
+      
+      <span className='head'><hr/>About Me<hr/></span>
     </div>
   )
 }
