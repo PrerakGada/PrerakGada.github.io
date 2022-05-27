@@ -1,0 +1,7 @@
+@use '../../Theme' as t;
+
+.about-container {
+  height: 100vh;
+  background-color: t.$black2;
+  width: 100%;
+}

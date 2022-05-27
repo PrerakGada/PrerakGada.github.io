@@ -1,0 +1,7 @@
+@use '../../Theme' as t;
+
+.skills-container {
+  height: 100vh;
+  background-color: t.$black2;
+  width: 100%;
+}

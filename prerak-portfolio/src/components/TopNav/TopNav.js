@@ -1,31 +1,39 @@
 import React from 'react'
-import './SideNav.scss'
-import LogoS from '../../assets/images/logo-p.png'
-import LogoSubtitle from '../../assets/images/img.png'
-import {Link, NavLink} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 import {BiHomeSmile, BiMessage, BiUser} from "react-icons/bi";
 import {GiSkills} from "react-icons/gi";
+import './TopNav.scss';
+import {Link} from 'react-scroll';
 import {FaGithub, FaInstagram, FaLinkedin, FaYoutube} from "react-icons/fa";
 
-const SideNav = () => {
+
+export const TopNav = () => {
 	return (
-		<div className="side-nav-container">
+		<div className="top-nav-container">
+			<div className="nav-logo">
+				Prerak
+			</div>
 			<nav>
-				<NavLink exact="true" activeclassname="active" to="/">
-					<BiHomeSmile/>
-				</NavLink>
+				<Link to="home" spy={true} smooth={true} offset={0} duration={500}>
+					<BiHomeSmile className={'nav-item-small'}/>
+					<span className={'nav-item-big'}>Home</span>
+				</Link>
 				
-				<NavLink activeclassname="active" className="about-link" to="/about">
-					<BiUser/>
-				</NavLink>
+				<Link to="about" spy={true} smooth={true} offset={0} duration={500}>
+					<BiUser className={'nav-item-small'}/>
+					<span className={'nav-item-big'}>About</span>
+				</Link>
 				
-				<NavLink activeclassname="active" className="contact-link" to="/contact">
-					<BiMessage/>
-				</NavLink>
+				<Link to="skills" spy={true} smooth={true} offset={0} duration={500}>
+					<GiSkills className={'nav-item-small'}/>
+					<span className={'nav-item-big'}>Skills</span>
+				</Link>
 				
-				<NavLink activeclassname="active" className="skills-link" to="/skills">
-					<GiSkills/>
-				</NavLink>
+				<Link to="contact" spy={true} smooth={true} offset={0} duration={500}>
+					<BiMessage className={'nav-item-small'}/>
+					<span className={'nav-item-big'}>Contact</span>
+				</Link>
+				
 				
 				{/*<ul>*/}
 				{/*	<li>*/}
@@ -67,8 +75,6 @@ const SideNav = () => {
 				{/*</ul>*/}
 			</nav>
 		</div>
-	
 	)
 }
 
-export default SideNav
