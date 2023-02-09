@@ -1,20 +1,25 @@
-import './App.scss';
-import {Route, Routes} from "react-router-dom";
-import {Skills} from "./components/Skills/Skills";
-import Layout from "./components/Layout/Layout";
-import {Template} from "./components/Template/Template";
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
-	return (
-		<>
-			<Routes>
-				{/*<Route path="/" element={<Layout/>}>*/}
-				{/*	<Route path="skills" element={<Skills/>}/>*/}
-				{/*</Route>*/}
-				<Route path={'/'} element={<Template/>}/>
-			</Routes>
-		</>
-	);
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
 }
 
 export default App;
